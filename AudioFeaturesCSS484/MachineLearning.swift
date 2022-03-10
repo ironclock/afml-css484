@@ -22,7 +22,7 @@ class Output: Identifiable {
 
 class MachineLearning {
     
-    let audioModel = ThirdModel()
+    let audioModel = FifthModel()
     var audioOutput = [Output]()
         
     func runModel(features: [Features]) async -> [Output] {

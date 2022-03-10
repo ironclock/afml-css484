@@ -18,6 +18,7 @@
 		363C614A27CC859100FB5ED5 /* AudioFeaturesCSS484UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 363C614927CC859100FB5ED5 /* AudioFeaturesCSS484UITestsLaunchTests.swift */; };
 		363C615727CC85A900FB5ED5 /* FeatureExtraction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 363C615627CC85A900FB5ED5 /* FeatureExtraction.swift */; };
 		3649FBA327DAA30600C9824C /* ThirdModel.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 3649FBA227DAA30600C9824C /* ThirdModel.mlmodel */; };
+		3649FBA727DAB23800C9824C /* FifthModel.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 3649FBA627DAB23800C9824C /* FifthModel.mlmodel */; };
 		3655997227D1D867007B8760 /* MachineLearning.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3655997127D1D867007B8760 /* MachineLearning.swift */; };
 		3673326927D40C8D00EEB47B /* testingData.csv in Resources */ = {isa = PBXBuildFile; fileRef = 3673326827D40C8D00EEB47B /* testingData.csv */; };
 		3673A4A727D41A5800C6DEA8 /* OutputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3673A4A627D41A5800C6DEA8 /* OutputView.swift */; };
@@ -56,6 +57,7 @@
 		363C614927CC859100FB5ED5 /* AudioFeaturesCSS484UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioFeaturesCSS484UITestsLaunchTests.swift; sourceTree = "<group>"; };
 		363C615627CC85A900FB5ED5 /* FeatureExtraction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeatureExtraction.swift; sourceTree = "<group>"; };
 		3649FBA227DAA30600C9824C /* ThirdModel.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = ThirdModel.mlmodel; sourceTree = SOURCE_ROOT; };
+		3649FBA627DAB23800C9824C /* FifthModel.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = FifthModel.mlmodel; sourceTree = SOURCE_ROOT; };
 		3655997127D1D867007B8760 /* MachineLearning.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MachineLearning.swift; sourceTree = "<group>"; };
 		3673326827D40C8D00EEB47B /* testingData.csv */ = {isa = PBXFileReference; lastKnownFileType = text; path = testingData.csv; sourceTree = SOURCE_ROOT; };
 		3673A4A627D41A5800C6DEA8 /* OutputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutputView.swift; sourceTree = "<group>"; };
@@ -129,6 +131,7 @@
 				363C615627CC85A900FB5ED5 /* FeatureExtraction.swift */,
 				3649FBA227DAA30600C9824C /* ThirdModel.mlmodel */,
 				3673326827D40C8D00EEB47B /* testingData.csv */,
+				3649FBA627DAB23800C9824C /* FifthModel.mlmodel */,
 				3655997127D1D867007B8760 /* MachineLearning.swift */,
 				367C43E827CC9AF1006F2B53 /* AudioUtilities.swift */,
 				3601E7E327CF2B500056D6C0 /* audioFiles */,
@@ -352,6 +355,7 @@
 				3655997227D1D867007B8760 /* MachineLearning.swift in Sources */,
 				3673A4A727D41A5800C6DEA8 /* OutputView.swift in Sources */,
 				367C43E927CC9AF1006F2B53 /* AudioUtilities.swift in Sources */,
+				3649FBA727DAB23800C9824C /* FifthModel.mlmodel in Sources */,
 				363C612F27CC858F00FB5ED5 /* ContentView.swift in Sources */,
 				363C612D27CC858F00FB5ED5 /* AudioFeaturesCSS484App.swift in Sources */,
 				3649FBA327DAA30600C9824C /* ThirdModel.mlmodel in Sources */,
