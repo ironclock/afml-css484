@@ -1,0 +1,9 @@
+fileName,energyDistribution,zeroCrossing,averageEnergy,label
+mu17.wav,2357,0.0987,0.0767,yes
+mu18.wav,2160,0.1356,0.0039,yes
+mu19.wav,2686,0.1691,0.0018,yes
+mu20.wav,2258,0.1218,0.0007,yes
+sp17.wav,2530,0.2042,0.0619,no
+sp18.wav,1085,0.0605,0.0036,no
+sp19.wav,2645,0.1157,0.0034,no
+sp20.wav,876,0.0796,0.0158,no

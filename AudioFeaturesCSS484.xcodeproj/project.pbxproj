@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		30334CDBB76F2604F6C644F0 /* Pods_AudioFeaturesCSS484.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6800D3618519795CCA2F1277 /* Pods_AudioFeaturesCSS484.framework */; };
+		3601E7E427CF2B500056D6C0 /* audioFiles in Resources */ = {isa = PBXBuildFile; fileRef = 3601E7E327CF2B500056D6C0 /* audioFiles */; };
 		363C612D27CC858F00FB5ED5 /* AudioFeaturesCSS484App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 363C612C27CC858F00FB5ED5 /* AudioFeaturesCSS484App.swift */; };
 		363C612F27CC858F00FB5ED5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 363C612E27CC858F00FB5ED5 /* ContentView.swift */; };
 		363C613127CC859000FB5ED5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 363C613027CC859000FB5ED5 /* Assets.xcassets */; };
@@ -14,6 +16,12 @@
 		363C613E27CC859100FB5ED5 /* AudioFeaturesCSS484Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 363C613D27CC859100FB5ED5 /* AudioFeaturesCSS484Tests.swift */; };
 		363C614827CC859100FB5ED5 /* AudioFeaturesCSS484UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 363C614727CC859100FB5ED5 /* AudioFeaturesCSS484UITests.swift */; };
 		363C614A27CC859100FB5ED5 /* AudioFeaturesCSS484UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 363C614927CC859100FB5ED5 /* AudioFeaturesCSS484UITestsLaunchTests.swift */; };
+		363C615727CC85A900FB5ED5 /* FeatureExtraction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 363C615627CC85A900FB5ED5 /* FeatureExtraction.swift */; };
+		3649FBA327DAA30600C9824C /* ThirdModel.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 3649FBA227DAA30600C9824C /* ThirdModel.mlmodel */; };
+		3655997227D1D867007B8760 /* MachineLearning.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3655997127D1D867007B8760 /* MachineLearning.swift */; };
+		3673326927D40C8D00EEB47B /* testingData.csv in Resources */ = {isa = PBXBuildFile; fileRef = 3673326827D40C8D00EEB47B /* testingData.csv */; };
+		3673A4A727D41A5800C6DEA8 /* OutputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3673A4A627D41A5800C6DEA8 /* OutputView.swift */; };
+		367C43E927CC9AF1006F2B53 /* AudioUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 367C43E827CC9AF1006F2B53 /* AudioUtilities.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +42,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2CE1503A17DCF6FBAD443FC4 /* Pods-AudioFeaturesCSS484.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AudioFeaturesCSS484.debug.xcconfig"; path = "Target Support Files/Pods-AudioFeaturesCSS484/Pods-AudioFeaturesCSS484.debug.xcconfig"; sourceTree = "<group>"; };
+		3601E7E327CF2B500056D6C0 /* audioFiles */ = {isa = PBXFileReference; lastKnownFileType = folder; path = audioFiles; sourceTree = "<group>"; };
 		363C612927CC858F00FB5ED5 /* AudioFeaturesCSS484.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AudioFeaturesCSS484.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		363C612C27CC858F00FB5ED5 /* AudioFeaturesCSS484App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioFeaturesCSS484App.swift; sourceTree = "<group>"; };
 		363C612E27CC858F00FB5ED5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -44,6 +54,14 @@
 		363C614327CC859100FB5ED5 /* AudioFeaturesCSS484UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AudioFeaturesCSS484UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		363C614727CC859100FB5ED5 /* AudioFeaturesCSS484UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioFeaturesCSS484UITests.swift; sourceTree = "<group>"; };
 		363C614927CC859100FB5ED5 /* AudioFeaturesCSS484UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioFeaturesCSS484UITestsLaunchTests.swift; sourceTree = "<group>"; };
+		363C615627CC85A900FB5ED5 /* FeatureExtraction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeatureExtraction.swift; sourceTree = "<group>"; };
+		3649FBA227DAA30600C9824C /* ThirdModel.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = ThirdModel.mlmodel; sourceTree = SOURCE_ROOT; };
+		3655997127D1D867007B8760 /* MachineLearning.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MachineLearning.swift; sourceTree = "<group>"; };
+		3673326827D40C8D00EEB47B /* testingData.csv */ = {isa = PBXFileReference; lastKnownFileType = text; path = testingData.csv; sourceTree = SOURCE_ROOT; };
+		3673A4A627D41A5800C6DEA8 /* OutputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutputView.swift; sourceTree = "<group>"; };
+		367C43E827CC9AF1006F2B53 /* AudioUtilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioUtilities.swift; sourceTree = "<group>"; };
+		6800D3618519795CCA2F1277 /* Pods_AudioFeaturesCSS484.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AudioFeaturesCSS484.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E7408665DFE5038637BFC14F /* Pods-AudioFeaturesCSS484.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AudioFeaturesCSS484.release.xcconfig"; path = "Target Support Files/Pods-AudioFeaturesCSS484/Pods-AudioFeaturesCSS484.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				30334CDBB76F2604F6C644F0 /* Pods_AudioFeaturesCSS484.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -71,6 +90,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		301D92F42521AE78FBCFE68D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2CE1503A17DCF6FBAD443FC4 /* Pods-AudioFeaturesCSS484.debug.xcconfig */,
+				E7408665DFE5038637BFC14F /* Pods-AudioFeaturesCSS484.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		363C612027CC858F00FB5ED5 = {
 			isa = PBXGroup;
 			children = (
@@ -78,6 +106,8 @@
 				363C613C27CC859100FB5ED5 /* AudioFeaturesCSS484Tests */,
 				363C614627CC859100FB5ED5 /* AudioFeaturesCSS484UITests */,
 				363C612A27CC858F00FB5ED5 /* Products */,
+				301D92F42521AE78FBCFE68D /* Pods */,
+				C06F57216188767B87391729 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -96,8 +126,15 @@
 			children = (
 				363C612C27CC858F00FB5ED5 /* AudioFeaturesCSS484App.swift */,
 				363C612E27CC858F00FB5ED5 /* ContentView.swift */,
+				363C615627CC85A900FB5ED5 /* FeatureExtraction.swift */,
+				3649FBA227DAA30600C9824C /* ThirdModel.mlmodel */,
+				3673326827D40C8D00EEB47B /* testingData.csv */,
+				3655997127D1D867007B8760 /* MachineLearning.swift */,
+				367C43E827CC9AF1006F2B53 /* AudioUtilities.swift */,
+				3601E7E327CF2B500056D6C0 /* audioFiles */,
 				363C613027CC859000FB5ED5 /* Assets.xcassets */,
 				363C613227CC859000FB5ED5 /* Preview Content */,
+				3673A4A627D41A5800C6DEA8 /* OutputView.swift */,
 			);
 			path = AudioFeaturesCSS484;
 			sourceTree = "<group>";
@@ -127,6 +164,14 @@
 			path = AudioFeaturesCSS484UITests;
 			sourceTree = "<group>";
 		};
+		C06F57216188767B87391729 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6800D3618519795CCA2F1277 /* Pods_AudioFeaturesCSS484.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -134,9 +179,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 363C614D27CC859100FB5ED5 /* Build configuration list for PBXNativeTarget "AudioFeaturesCSS484" */;
 			buildPhases = (
+				87ADCA01D7AABEEA4256C619 /* [CP] Check Pods Manifest.lock */,
 				363C612527CC858F00FB5ED5 /* Sources */,
 				363C612627CC858F00FB5ED5 /* Frameworks */,
 				363C612727CC858F00FB5ED5 /* Resources */,
+				9F25C5ADB5F654CBD7E5EE50 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -232,7 +279,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				363C613427CC859000FB5ED5 /* Preview Assets.xcassets in Resources */,
+				3673326927D40C8D00EEB47B /* testingData.csv in Resources */,
 				363C613127CC859000FB5ED5 /* Assets.xcassets in Resources */,
+				3601E7E427CF2B500056D6C0 /* audioFiles in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -252,13 +301,60 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		87ADCA01D7AABEEA4256C619 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AudioFeaturesCSS484-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9F25C5ADB5F654CBD7E5EE50 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AudioFeaturesCSS484/Pods-AudioFeaturesCSS484-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AudioFeaturesCSS484/Pods-AudioFeaturesCSS484-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AudioFeaturesCSS484/Pods-AudioFeaturesCSS484-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		363C612527CC858F00FB5ED5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				363C615727CC85A900FB5ED5 /* FeatureExtraction.swift in Sources */,
+				3655997227D1D867007B8760 /* MachineLearning.swift in Sources */,
+				3673A4A727D41A5800C6DEA8 /* OutputView.swift in Sources */,
+				367C43E927CC9AF1006F2B53 /* AudioUtilities.swift in Sources */,
 				363C612F27CC858F00FB5ED5 /* ContentView.swift in Sources */,
 				363C612D27CC858F00FB5ED5 /* AudioFeaturesCSS484App.swift in Sources */,
+				3649FBA327DAA30600C9824C /* ThirdModel.mlmodel in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -346,6 +442,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/Pods/**";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -401,6 +498,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/Pods/**";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -413,6 +511,7 @@
 		};
 		363C614E27CC859100FB5ED5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2CE1503A17DCF6FBAD443FC4 /* Pods-AudioFeaturesCSS484.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -442,6 +541,7 @@
 		};
 		363C614F27CC859100FB5ED5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E7408665DFE5038637BFC14F /* Pods-AudioFeaturesCSS484.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

@@ -1,0 +1,935 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		04B83C45560BF0A525C4AA18C6CE2AF8 /* Pitch.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEDF045686AED1598B022E1DC989F0CC /* Pitch.swift */; };
+		07D4276290934D3B04E3D4FADB4A97D8 /* WaveCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F72580DBF474BDF912E096D0845F216 /* WaveCalculator.swift */; };
+		0B758B8A5F5095986DCABA8B21221965 /* AcousticWave.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AEBE51CAAFFF36E3758206BC3442AC7 /* AcousticWave.swift */; };
+		0C3E7D27F6260FA24AF1A0E3F2CAE605 /* PitchCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF5FD434800DF891D7FB0DE99419C0E /* PitchCalculator.swift */; };
+		11D7F16C0600F38A7EF96B207E7862F0 /* BarycentricEstimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4245DF70F3DF1899AE06FDA9D4C205C /* BarycentricEstimator.swift */; };
+		13F12F0E10761E4DF4431EEEEF1A0FAF /* EstimationError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 278E3A2BC3533D38C3A42B04276B8B06 /* EstimationError.swift */; };
+		164949BE174563F9CBE616047E337B53 /* YINUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 940FE38B5691E7D6700E2720EE7C38C5 /* YINUtil.swift */; };
+		18940758DC199ABD054234809EEB7531 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1217D2C1024869B32C1E7F353B8D4E66 /* Foundation.framework */; };
+		1A9AA34F16281FABC0D56E35F467E06B /* LocationEstimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD361C8C0C903D759677F4DABFF249E0 /* LocationEstimator.swift */; };
+		1C914775758C56E149DC2057227801CF /* Pitchy-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C2351741501989657701C03CDAC79F0E /* Pitchy-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		24FB890D5B85B7E9ADD110326A18AE6A /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FD75BEE980BC064F47E7A151D9F9206 /* Error.swift */; };
+		31AD5050BE357FC52E6AD9990A5A3739 /* Pods-AudioFeaturesCSS484-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 013D76DBD05FE8E4EB4CEEC33426906D /* Pods-AudioFeaturesCSS484-dummy.m */; };
+		41378117E036AC6C53B2A196DEACB07C /* Pods-AudioFeaturesCSS484-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 656FF630AD984B44A5C12E45542849F9 /* Pods-AudioFeaturesCSS484-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4271DAA7A5DCB43B93EAB086A2373C5A /* YINEstimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C957C86BD4BB7532DB17982EAAFAE62 /* YINEstimator.swift */; };
+		48BFACADD277CBAA1DB13C9E97D6A0C2 /* PitchEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8721ED9424441B8A543033F170D2FE6 /* PitchEngine.swift */; };
+		4FE061CDF2D25CFA6260C3F687A92D04 /* InputSignalTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1318CB88F02BC024532E2B3377559624 /* InputSignalTracker.swift */; };
+		506B0DBF597DA7C6F062C4E2C5F145F6 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B839910F2172B0A6A4451F021EEF9FC2 /* Accelerate.framework */; };
+		5685A858CB9F1729E5F92C668DD5D70F /* QuadradicEstimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA1A1270F0A4E83E7A5075B6BAA51D6 /* QuadradicEstimator.swift */; };
+		5BFC9D4D2CF65605F89C763BA800C2FA /* Transformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B465BF8B853A4EA3A8E78AD7B4E7A174 /* Transformer.swift */; };
+		6089525E047EEA75ABBE673386C2631C /* Beethoven-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C853486D5395E5BCBC09300FF6D515F /* Beethoven-dummy.m */; };
+		651D2FC1E817A7E9372A32E86B7E1C78 /* QuinnsFirstEstimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9509CBDEB0780AC4A27759D8538EE37D /* QuinnsFirstEstimator.swift */; };
+		72A77FC363A7AE775D371BE817521455 /* FrequencyValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F04889C528417F1874FA767963F6674 /* FrequencyValidator.swift */; };
+		7395BCC2D83815DE32A17F7993019856 /* EstimationStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27599AB66601002F957D68F7C2E40BC0 /* EstimationStrategy.swift */; };
+		7736AEDEBDCCA09194799C4C6670FE3D /* OutputSignalTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E744CCAEC7D13807AC5DCEAEE01E262 /* OutputSignalTracker.swift */; };
+		7CE7314CFFE1AD4B860B751902708968 /* Array+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E52FEB5FC9E57E3B81AA4704688B18B /* Array+Extensions.swift */; };
+		7E8624DC5610FB770F183CC61F2BEF98 /* JainsEstimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 376A80B2FFFE4A98B2ECD2417EC936BA /* JainsEstimator.swift */; };
+		8022D5F9DC040D6281D168DF192E0152 /* MaxValueEstimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7020FB789E4D7D643BEBBCD91D0564A0 /* MaxValueEstimator.swift */; };
+		89F1A83E76B64BA81060D9147C5B69E8 /* YINTransformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C255272485B8D04FDE164D1BAB13F353 /* YINTransformer.swift */; };
+		90966FE23ECF4122BBCE6A86914FD5EE /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54CFAB0F95AFC622FE6A4E01CA6E34C0 /* Config.swift */; };
+		9166B43B1B98B7238BE491A6601E6EEA /* QuinnsSecondEstimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FEAB1CBA0470D656D371E894FE61EFB /* QuinnsSecondEstimator.swift */; };
+		9B7FC0B360D01BC65B4874D170452DB6 /* Beethoven-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B27D7B66F235FEC01E2F02983F757790 /* Beethoven-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A318C257D2CE8A7CB4F2D1571015A919 /* SimpleTransformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E3E2CCC9BFF5D2C2E643037CA05B493 /* SimpleTransformer.swift */; };
+		A81E073DD3EE26CEBB3AFB6F8B36F395 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1217D2C1024869B32C1E7F353B8D4E66 /* Foundation.framework */; };
+		B5378B78F70B62B0124EFF5873F0CF90 /* Estimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5032019A67ED8D61705EAF0A6AFAB5D /* Estimator.swift */; };
+		BB10C216D6FBF974B16845252C079232 /* SimulatorSignalTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92D22CDF87FEA050E87A9B812FDD50F3 /* SimulatorSignalTracker.swift */; };
+		C1D64B44F299C2C23841A565EE47C288 /* SignalTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E96EA4406D6C5679368713673107B9B /* SignalTracker.swift */; };
+		C8490E64A0D4FF8AC55E9FC90DB354C8 /* HPSEstimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A814F24409E914DACCCC7CD9F089C816 /* HPSEstimator.swift */; };
+		D50859B5795BF3BF987B2A7AD2CF1FA2 /* Pitchy-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F501662EBD57A61BF19A7E2EBE7C02D0 /* Pitchy-dummy.m */; };
+		D63FDC8BA1511827DF9AB756B55B2C71 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1B4C781B9BDABB1E56202DF2D205D26 /* AVFoundation.framework */; };
+		E427690644DEAD883AAB3FC1FC0EDA43 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1217D2C1024869B32C1E7F353B8D4E66 /* Foundation.framework */; };
+		E97D739567D462765EF978B2649F5133 /* Buffer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24347D7FA9FC26B2164C3BDB9796A385 /* Buffer.swift */; };
+		F49C086720DD94033946BEFEE632F181 /* NoteCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CEEDE256D4DA79A4AEBDD8FD6EE4D76 /* NoteCalculator.swift */; };
+		F8726221D8DC8F7C371EBEC052295FAC /* EstimationFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8F4FD1B4580C29F11799F9DBF81BDB7 /* EstimationFactory.swift */; };
+		FE6FAC74A7599C34B6F03CE982496B2A /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B514B47B8DA6AED8AA46FDC5BA83C02 /* Note.swift */; };
+		FE8FF517AE5027E4B8CA69D42FF07F75 /* FFTTransformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6EFB4C81EBB2C91B3994C4C49E30790 /* FFTTransformer.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0BE96B227A5EECD07E3DAB5A64D37CAB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7DF057AD7A09E3239F8A743273F545B1;
+			remoteInfo = Pitchy;
+		};
+		82FC8822257CAFBC8CC7D0B411CD320E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7DF057AD7A09E3239F8A743273F545B1;
+			remoteInfo = Pitchy;
+		};
+		A5BB53379E851555F9F15DB7943FADBD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CA6975F226AE2D5E0CE39C1BFC3B796F;
+			remoteInfo = Beethoven;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		013D76DBD05FE8E4EB4CEEC33426906D /* Pods-AudioFeaturesCSS484-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-AudioFeaturesCSS484-dummy.m"; sourceTree = "<group>"; };
+		0AEBE51CAAFFF36E3758206BC3442AC7 /* AcousticWave.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AcousticWave.swift; path = Source/Data/AcousticWave.swift; sourceTree = "<group>"; };
+		0C957C86BD4BB7532DB17982EAAFAE62 /* YINEstimator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = YINEstimator.swift; path = Source/Estimation/Strategies/YINEstimator.swift; sourceTree = "<group>"; };
+		0CEEDE256D4DA79A4AEBDD8FD6EE4D76 /* NoteCalculator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NoteCalculator.swift; path = Source/Calculators/NoteCalculator.swift; sourceTree = "<group>"; };
+		0FD75BEE980BC064F47E7A151D9F9206 /* Error.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Error.swift; path = Source/Error.swift; sourceTree = "<group>"; };
+		1217D2C1024869B32C1E7F353B8D4E66 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		1318CB88F02BC024532E2B3377559624 /* InputSignalTracker.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = InputSignalTracker.swift; path = Source/SignalTracking/Units/InputSignalTracker.swift; sourceTree = "<group>"; };
+		149845C742C0282223F95C1E6B859E26 /* Pods-AudioFeaturesCSS484 */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-AudioFeaturesCSS484"; path = Pods_AudioFeaturesCSS484.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1B514B47B8DA6AED8AA46FDC5BA83C02 /* Note.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Note.swift; path = Source/Data/Note.swift; sourceTree = "<group>"; };
+		23BFBC9873CF4A8CEF9924AF317759B7 /* Beethoven */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Beethoven; path = Beethoven.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		24347D7FA9FC26B2164C3BDB9796A385 /* Buffer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Buffer.swift; path = Source/Library/Buffer.swift; sourceTree = "<group>"; };
+		27599AB66601002F957D68F7C2E40BC0 /* EstimationStrategy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EstimationStrategy.swift; path = Source/Estimation/EstimationStrategy.swift; sourceTree = "<group>"; };
+		278E3A2BC3533D38C3A42B04276B8B06 /* EstimationError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EstimationError.swift; path = Source/Estimation/EstimationError.swift; sourceTree = "<group>"; };
+		2C853486D5395E5BCBC09300FF6D515F /* Beethoven-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Beethoven-dummy.m"; sourceTree = "<group>"; };
+		34CAC5AA6325FB56354DCB605DB829A2 /* Pods-AudioFeaturesCSS484-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AudioFeaturesCSS484-acknowledgements.plist"; sourceTree = "<group>"; };
+		35FB2C6993670B3CDCD92323DD15BB92 /* Pitchy-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pitchy-prefix.pch"; sourceTree = "<group>"; };
+		375187A9131893C7A2C5DB90413D1558 /* Pods-AudioFeaturesCSS484.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AudioFeaturesCSS484.debug.xcconfig"; sourceTree = "<group>"; };
+		376A80B2FFFE4A98B2ECD2417EC936BA /* JainsEstimator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JainsEstimator.swift; path = Source/Estimation/Strategies/JainsEstimator.swift; sourceTree = "<group>"; };
+		3E96EA4406D6C5679368713673107B9B /* SignalTracker.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SignalTracker.swift; path = Source/SignalTracking/SignalTracker.swift; sourceTree = "<group>"; };
+		54CFAB0F95AFC622FE6A4E01CA6E34C0 /* Config.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Config.swift; path = Source/Config.swift; sourceTree = "<group>"; };
+		5FA1A1270F0A4E83E7A5075B6BAA51D6 /* QuadradicEstimator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = QuadradicEstimator.swift; path = Source/Estimation/Strategies/QuadradicEstimator.swift; sourceTree = "<group>"; };
+		5FEAB1CBA0470D656D371E894FE61EFB /* QuinnsSecondEstimator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = QuinnsSecondEstimator.swift; path = Source/Estimation/Strategies/QuinnsSecondEstimator.swift; sourceTree = "<group>"; };
+		63DDD43CD039C07E9DF1CC1A74B1307A /* Beethoven-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Beethoven-prefix.pch"; sourceTree = "<group>"; };
+		65377176EF5A2AC55399257945BD1153 /* Pitchy */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pitchy; path = Pitchy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		656FF630AD984B44A5C12E45542849F9 /* Pods-AudioFeaturesCSS484-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-AudioFeaturesCSS484-umbrella.h"; sourceTree = "<group>"; };
+		6E3E2CCC9BFF5D2C2E643037CA05B493 /* SimpleTransformer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SimpleTransformer.swift; path = Source/Transform/Strategies/SimpleTransformer.swift; sourceTree = "<group>"; };
+		6E52FEB5FC9E57E3B81AA4704688B18B /* Array+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Array+Extensions.swift"; path = "Source/Library/Extensions/Array+Extensions.swift"; sourceTree = "<group>"; };
+		6F04889C528417F1874FA767963F6674 /* FrequencyValidator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FrequencyValidator.swift; path = Source/FrequencyValidator.swift; sourceTree = "<group>"; };
+		6F72580DBF474BDF912E096D0845F216 /* WaveCalculator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WaveCalculator.swift; path = Source/Calculators/WaveCalculator.swift; sourceTree = "<group>"; };
+		7020FB789E4D7D643BEBBCD91D0564A0 /* MaxValueEstimator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MaxValueEstimator.swift; path = Source/Estimation/Strategies/MaxValueEstimator.swift; sourceTree = "<group>"; };
+		794BA96897CC1B2BA7F47D1D6D115DCB /* Beethoven.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Beethoven.modulemap; sourceTree = "<group>"; };
+		8AF5FD434800DF891D7FB0DE99419C0E /* PitchCalculator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PitchCalculator.swift; path = Source/Calculators/PitchCalculator.swift; sourceTree = "<group>"; };
+		92D22CDF87FEA050E87A9B812FDD50F3 /* SimulatorSignalTracker.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SimulatorSignalTracker.swift; path = Source/SignalTracking/Units/SimulatorSignalTracker.swift; sourceTree = "<group>"; };
+		940FE38B5691E7D6700E2720EE7C38C5 /* YINUtil.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = YINUtil.swift; path = Source/Library/YINUtil.swift; sourceTree = "<group>"; };
+		9509CBDEB0780AC4A27759D8538EE37D /* QuinnsFirstEstimator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = QuinnsFirstEstimator.swift; path = Source/Estimation/Strategies/QuinnsFirstEstimator.swift; sourceTree = "<group>"; };
+		96EDA62D9F7E327E92250A80CDC7FB6F /* Pods-AudioFeaturesCSS484-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AudioFeaturesCSS484-Info.plist"; sourceTree = "<group>"; };
+		9B297F9DD339E1A217FEE7BE8338379F /* Pods-AudioFeaturesCSS484.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-AudioFeaturesCSS484.modulemap"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9E744CCAEC7D13807AC5DCEAEE01E262 /* OutputSignalTracker.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OutputSignalTracker.swift; path = Source/SignalTracking/Units/OutputSignalTracker.swift; sourceTree = "<group>"; };
+		A3A9543739A8A649C7DADCB63721C9C0 /* Pitchy.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Pitchy.modulemap; sourceTree = "<group>"; };
+		A814F24409E914DACCCC7CD9F089C816 /* HPSEstimator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HPSEstimator.swift; path = Source/Estimation/Strategies/HPSEstimator.swift; sourceTree = "<group>"; };
+		B27D7B66F235FEC01E2F02983F757790 /* Beethoven-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Beethoven-umbrella.h"; sourceTree = "<group>"; };
+		B465BF8B853A4EA3A8E78AD7B4E7A174 /* Transformer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Transformer.swift; path = Source/Transform/Transformer.swift; sourceTree = "<group>"; };
+		B839910F2172B0A6A4451F021EEF9FC2 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Accelerate.framework; sourceTree = DEVELOPER_DIR; };
+		B8721ED9424441B8A543033F170D2FE6 /* PitchEngine.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PitchEngine.swift; path = Source/PitchEngine.swift; sourceTree = "<group>"; };
+		BADD8AA536F6560D7870E3B790D66930 /* Beethoven.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Beethoven.release.xcconfig; sourceTree = "<group>"; };
+		BC58E31D957428C823799DD8F46434EF /* Beethoven-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Beethoven-Info.plist"; sourceTree = "<group>"; };
+		BEDF045686AED1598B022E1DC989F0CC /* Pitch.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Pitch.swift; path = Source/Data/Pitch.swift; sourceTree = "<group>"; };
+		C2351741501989657701C03CDAC79F0E /* Pitchy-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pitchy-umbrella.h"; sourceTree = "<group>"; };
+		C255272485B8D04FDE164D1BAB13F353 /* YINTransformer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = YINTransformer.swift; path = Source/Transform/Strategies/YINTransformer.swift; sourceTree = "<group>"; };
+		C5032019A67ED8D61705EAF0A6AFAB5D /* Estimator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Estimator.swift; path = Source/Estimation/Estimator.swift; sourceTree = "<group>"; };
+		CE64C3209242F5A7A93117BA0EE4EB00 /* Beethoven.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Beethoven.debug.xcconfig; sourceTree = "<group>"; };
+		D3F765D3C77850162A5D646D078F0242 /* Pods-AudioFeaturesCSS484-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-AudioFeaturesCSS484-acknowledgements.markdown"; sourceTree = "<group>"; };
+		E11ABBA1D1436F1412A356F4B3AD2FFF /* Pitchy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pitchy.debug.xcconfig; sourceTree = "<group>"; };
+		E6EFB4C81EBB2C91B3994C4C49E30790 /* FFTTransformer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FFTTransformer.swift; path = Source/Transform/Strategies/FFTTransformer.swift; sourceTree = "<group>"; };
+		E8F4FD1B4580C29F11799F9DBF81BDB7 /* EstimationFactory.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EstimationFactory.swift; path = Source/Estimation/EstimationFactory.swift; sourceTree = "<group>"; };
+		F1B4C781B9BDABB1E56202DF2D205D26 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/AVFoundation.framework; sourceTree = DEVELOPER_DIR; };
+		F4245DF70F3DF1899AE06FDA9D4C205C /* BarycentricEstimator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BarycentricEstimator.swift; path = Source/Estimation/Strategies/BarycentricEstimator.swift; sourceTree = "<group>"; };
+		F501662EBD57A61BF19A7E2EBE7C02D0 /* Pitchy-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pitchy-dummy.m"; sourceTree = "<group>"; };
+		F821BA0FA43DF9BC448FDAA22BAAA950 /* Pods-AudioFeaturesCSS484-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AudioFeaturesCSS484-frameworks.sh"; sourceTree = "<group>"; };
+		FBAD379A3BD11824B0C980373C3D75F9 /* Pods-AudioFeaturesCSS484.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AudioFeaturesCSS484.release.xcconfig"; sourceTree = "<group>"; };
+		FD361C8C0C903D759677F4DABFF249E0 /* LocationEstimator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LocationEstimator.swift; path = Source/Estimation/LocationEstimator.swift; sourceTree = "<group>"; };
+		FD5A7073859368507E633EDE087F1F94 /* Pitchy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pitchy.release.xcconfig; sourceTree = "<group>"; };
+		FFD28C4F83838D1543AE7C6101C6D88D /* Pitchy-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pitchy-Info.plist"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6D8E9E0452AB882447545A4F9344378C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				506B0DBF597DA7C6F062C4E2C5F145F6 /* Accelerate.framework in Frameworks */,
+				D63FDC8BA1511827DF9AB756B55B2C71 /* AVFoundation.framework in Frameworks */,
+				18940758DC199ABD054234809EEB7531 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D44950D188782F592FF1BF1A1B53338F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E427690644DEAD883AAB3FC1FC0EDA43 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FE0CBFCAE5CBCFD10CC8236A7500DDA9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A81E073DD3EE26CEBB3AFB6F8B36F395 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		03C5C200A0787E300053CFA8F53CA094 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				63E3BFE4AD886CF21D071E045EAD660C /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2F4C694B1B19F41AB5F87631DF763FA5 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				75F12FA2B4AED831B87B4B050F9EBB4B /* Pods-AudioFeaturesCSS484 */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		63E3BFE4AD886CF21D071E045EAD660C /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				B839910F2172B0A6A4451F021EEF9FC2 /* Accelerate.framework */,
+				F1B4C781B9BDABB1E56202DF2D205D26 /* AVFoundation.framework */,
+				1217D2C1024869B32C1E7F353B8D4E66 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		75F12FA2B4AED831B87B4B050F9EBB4B /* Pods-AudioFeaturesCSS484 */ = {
+			isa = PBXGroup;
+			children = (
+				9B297F9DD339E1A217FEE7BE8338379F /* Pods-AudioFeaturesCSS484.modulemap */,
+				D3F765D3C77850162A5D646D078F0242 /* Pods-AudioFeaturesCSS484-acknowledgements.markdown */,
+				34CAC5AA6325FB56354DCB605DB829A2 /* Pods-AudioFeaturesCSS484-acknowledgements.plist */,
+				013D76DBD05FE8E4EB4CEEC33426906D /* Pods-AudioFeaturesCSS484-dummy.m */,
+				F821BA0FA43DF9BC448FDAA22BAAA950 /* Pods-AudioFeaturesCSS484-frameworks.sh */,
+				96EDA62D9F7E327E92250A80CDC7FB6F /* Pods-AudioFeaturesCSS484-Info.plist */,
+				656FF630AD984B44A5C12E45542849F9 /* Pods-AudioFeaturesCSS484-umbrella.h */,
+				375187A9131893C7A2C5DB90413D1558 /* Pods-AudioFeaturesCSS484.debug.xcconfig */,
+				FBAD379A3BD11824B0C980373C3D75F9 /* Pods-AudioFeaturesCSS484.release.xcconfig */,
+			);
+			name = "Pods-AudioFeaturesCSS484";
+			path = "Target Support Files/Pods-AudioFeaturesCSS484";
+			sourceTree = "<group>";
+		};
+		AE6750896A3E74CCD88A8D66587E7E76 /* Beethoven */ = {
+			isa = PBXGroup;
+			children = (
+				6E52FEB5FC9E57E3B81AA4704688B18B /* Array+Extensions.swift */,
+				F4245DF70F3DF1899AE06FDA9D4C205C /* BarycentricEstimator.swift */,
+				24347D7FA9FC26B2164C3BDB9796A385 /* Buffer.swift */,
+				54CFAB0F95AFC622FE6A4E01CA6E34C0 /* Config.swift */,
+				278E3A2BC3533D38C3A42B04276B8B06 /* EstimationError.swift */,
+				E8F4FD1B4580C29F11799F9DBF81BDB7 /* EstimationFactory.swift */,
+				27599AB66601002F957D68F7C2E40BC0 /* EstimationStrategy.swift */,
+				C5032019A67ED8D61705EAF0A6AFAB5D /* Estimator.swift */,
+				E6EFB4C81EBB2C91B3994C4C49E30790 /* FFTTransformer.swift */,
+				A814F24409E914DACCCC7CD9F089C816 /* HPSEstimator.swift */,
+				1318CB88F02BC024532E2B3377559624 /* InputSignalTracker.swift */,
+				376A80B2FFFE4A98B2ECD2417EC936BA /* JainsEstimator.swift */,
+				FD361C8C0C903D759677F4DABFF249E0 /* LocationEstimator.swift */,
+				7020FB789E4D7D643BEBBCD91D0564A0 /* MaxValueEstimator.swift */,
+				9E744CCAEC7D13807AC5DCEAEE01E262 /* OutputSignalTracker.swift */,
+				B8721ED9424441B8A543033F170D2FE6 /* PitchEngine.swift */,
+				5FA1A1270F0A4E83E7A5075B6BAA51D6 /* QuadradicEstimator.swift */,
+				9509CBDEB0780AC4A27759D8538EE37D /* QuinnsFirstEstimator.swift */,
+				5FEAB1CBA0470D656D371E894FE61EFB /* QuinnsSecondEstimator.swift */,
+				3E96EA4406D6C5679368713673107B9B /* SignalTracker.swift */,
+				6E3E2CCC9BFF5D2C2E643037CA05B493 /* SimpleTransformer.swift */,
+				92D22CDF87FEA050E87A9B812FDD50F3 /* SimulatorSignalTracker.swift */,
+				B465BF8B853A4EA3A8E78AD7B4E7A174 /* Transformer.swift */,
+				0C957C86BD4BB7532DB17982EAAFAE62 /* YINEstimator.swift */,
+				C255272485B8D04FDE164D1BAB13F353 /* YINTransformer.swift */,
+				940FE38B5691E7D6700E2720EE7C38C5 /* YINUtil.swift */,
+				F485E40A10FCAAD5A5A2B34ACE324DC2 /* Support Files */,
+			);
+			name = Beethoven;
+			path = Beethoven;
+			sourceTree = "<group>";
+		};
+		BD0A2B62A6C62512E171C6E19B772A63 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				23BFBC9873CF4A8CEF9924AF317759B7 /* Beethoven */,
+				65377176EF5A2AC55399257945BD1153 /* Pitchy */,
+				149845C742C0282223F95C1E6B859E26 /* Pods-AudioFeaturesCSS484 */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				03C5C200A0787E300053CFA8F53CA094 /* Frameworks */,
+				E370AE4C9ED0E6D7F6033001CDABD8E6 /* Pods */,
+				BD0A2B62A6C62512E171C6E19B772A63 /* Products */,
+				2F4C694B1B19F41AB5F87631DF763FA5 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		E370AE4C9ED0E6D7F6033001CDABD8E6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AE6750896A3E74CCD88A8D66587E7E76 /* Beethoven */,
+				FE443EFAA27891F69B1F0B5384212B18 /* Pitchy */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		E4020D292F6946FE909CA161B8AD2FC3 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				A3A9543739A8A649C7DADCB63721C9C0 /* Pitchy.modulemap */,
+				F501662EBD57A61BF19A7E2EBE7C02D0 /* Pitchy-dummy.m */,
+				FFD28C4F83838D1543AE7C6101C6D88D /* Pitchy-Info.plist */,
+				35FB2C6993670B3CDCD92323DD15BB92 /* Pitchy-prefix.pch */,
+				C2351741501989657701C03CDAC79F0E /* Pitchy-umbrella.h */,
+				E11ABBA1D1436F1412A356F4B3AD2FFF /* Pitchy.debug.xcconfig */,
+				FD5A7073859368507E633EDE087F1F94 /* Pitchy.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Pitchy";
+			sourceTree = "<group>";
+		};
+		F485E40A10FCAAD5A5A2B34ACE324DC2 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				794BA96897CC1B2BA7F47D1D6D115DCB /* Beethoven.modulemap */,
+				2C853486D5395E5BCBC09300FF6D515F /* Beethoven-dummy.m */,
+				BC58E31D957428C823799DD8F46434EF /* Beethoven-Info.plist */,
+				63DDD43CD039C07E9DF1CC1A74B1307A /* Beethoven-prefix.pch */,
+				B27D7B66F235FEC01E2F02983F757790 /* Beethoven-umbrella.h */,
+				CE64C3209242F5A7A93117BA0EE4EB00 /* Beethoven.debug.xcconfig */,
+				BADD8AA536F6560D7870E3B790D66930 /* Beethoven.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Beethoven";
+			sourceTree = "<group>";
+		};
+		FE443EFAA27891F69B1F0B5384212B18 /* Pitchy */ = {
+			isa = PBXGroup;
+			children = (
+				0AEBE51CAAFFF36E3758206BC3442AC7 /* AcousticWave.swift */,
+				0FD75BEE980BC064F47E7A151D9F9206 /* Error.swift */,
+				6F04889C528417F1874FA767963F6674 /* FrequencyValidator.swift */,
+				1B514B47B8DA6AED8AA46FDC5BA83C02 /* Note.swift */,
+				0CEEDE256D4DA79A4AEBDD8FD6EE4D76 /* NoteCalculator.swift */,
+				BEDF045686AED1598B022E1DC989F0CC /* Pitch.swift */,
+				8AF5FD434800DF891D7FB0DE99419C0E /* PitchCalculator.swift */,
+				6F72580DBF474BDF912E096D0845F216 /* WaveCalculator.swift */,
+				E4020D292F6946FE909CA161B8AD2FC3 /* Support Files */,
+			);
+			name = Pitchy;
+			path = Pitchy;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		1291FBC3FD2C53B468E2D927DEF11F33 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9B7FC0B360D01BC65B4874D170452DB6 /* Beethoven-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1D2C34BFF928D7151DBE84130183251D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				41378117E036AC6C53B2A196DEACB07C /* Pods-AudioFeaturesCSS484-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7120554A1E00A7DB922630705F7DCE71 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1C914775758C56E149DC2057227801CF /* Pitchy-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		2987CF9F5B058AAA893FBC366B6263F9 /* Pods-AudioFeaturesCSS484 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D486F11A23109EEFB6F9F8A5183AAC05 /* Build configuration list for PBXNativeTarget "Pods-AudioFeaturesCSS484" */;
+			buildPhases = (
+				1D2C34BFF928D7151DBE84130183251D /* Headers */,
+				2ED55C38D31CF0451CFA9A6F83FEB1AB /* Sources */,
+				D44950D188782F592FF1BF1A1B53338F /* Frameworks */,
+				BEB492D894F8CE09088E395D6154ADF5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				70842CEF35AEE7815C92E4B1C23A1019 /* PBXTargetDependency */,
+				6A5C80DDE316C298E913A09014151AC2 /* PBXTargetDependency */,
+			);
+			name = "Pods-AudioFeaturesCSS484";
+			productName = Pods_AudioFeaturesCSS484;
+			productReference = 149845C742C0282223F95C1E6B859E26 /* Pods-AudioFeaturesCSS484 */;
+			productType = "com.apple.product-type.framework";
+		};
+		7DF057AD7A09E3239F8A743273F545B1 /* Pitchy */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 19E362A2EDF3A402B0AF0813FDB99EE8 /* Build configuration list for PBXNativeTarget "Pitchy" */;
+			buildPhases = (
+				7120554A1E00A7DB922630705F7DCE71 /* Headers */,
+				4735206705CC1951D3854AE6B62E0412 /* Sources */,
+				FE0CBFCAE5CBCFD10CC8236A7500DDA9 /* Frameworks */,
+				815715DCAF75766CB1B6CDC1107C386B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Pitchy;
+			productName = Pitchy;
+			productReference = 65377176EF5A2AC55399257945BD1153 /* Pitchy */;
+			productType = "com.apple.product-type.framework";
+		};
+		CA6975F226AE2D5E0CE39C1BFC3B796F /* Beethoven */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 007FFC3346D504C5849AA31F87623118 /* Build configuration list for PBXNativeTarget "Beethoven" */;
+			buildPhases = (
+				1291FBC3FD2C53B468E2D927DEF11F33 /* Headers */,
+				8F4AF716E1A131215E19A320406D4DF4 /* Sources */,
+				6D8E9E0452AB882447545A4F9344378C /* Frameworks */,
+				9F9F0A96898E3F39DE498D53F6E2BA8E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E8F21BF3CF4369187ED90F9F3675E00A /* PBXTargetDependency */,
+			);
+			name = Beethoven;
+			productName = Beethoven;
+			productReference = 23BFBC9873CF4A8CEF9924AF317759B7 /* Beethoven */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = BD0A2B62A6C62512E171C6E19B772A63 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CA6975F226AE2D5E0CE39C1BFC3B796F /* Beethoven */,
+				7DF057AD7A09E3239F8A743273F545B1 /* Pitchy */,
+				2987CF9F5B058AAA893FBC366B6263F9 /* Pods-AudioFeaturesCSS484 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		815715DCAF75766CB1B6CDC1107C386B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9F9F0A96898E3F39DE498D53F6E2BA8E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BEB492D894F8CE09088E395D6154ADF5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2ED55C38D31CF0451CFA9A6F83FEB1AB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				31AD5050BE357FC52E6AD9990A5A3739 /* Pods-AudioFeaturesCSS484-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4735206705CC1951D3854AE6B62E0412 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0B758B8A5F5095986DCABA8B21221965 /* AcousticWave.swift in Sources */,
+				24FB890D5B85B7E9ADD110326A18AE6A /* Error.swift in Sources */,
+				72A77FC363A7AE775D371BE817521455 /* FrequencyValidator.swift in Sources */,
+				FE6FAC74A7599C34B6F03CE982496B2A /* Note.swift in Sources */,
+				F49C086720DD94033946BEFEE632F181 /* NoteCalculator.swift in Sources */,
+				04B83C45560BF0A525C4AA18C6CE2AF8 /* Pitch.swift in Sources */,
+				0C3E7D27F6260FA24AF1A0E3F2CAE605 /* PitchCalculator.swift in Sources */,
+				D50859B5795BF3BF987B2A7AD2CF1FA2 /* Pitchy-dummy.m in Sources */,
+				07D4276290934D3B04E3D4FADB4A97D8 /* WaveCalculator.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8F4AF716E1A131215E19A320406D4DF4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7CE7314CFFE1AD4B860B751902708968 /* Array+Extensions.swift in Sources */,
+				11D7F16C0600F38A7EF96B207E7862F0 /* BarycentricEstimator.swift in Sources */,
+				6089525E047EEA75ABBE673386C2631C /* Beethoven-dummy.m in Sources */,
+				E97D739567D462765EF978B2649F5133 /* Buffer.swift in Sources */,
+				90966FE23ECF4122BBCE6A86914FD5EE /* Config.swift in Sources */,
+				13F12F0E10761E4DF4431EEEEF1A0FAF /* EstimationError.swift in Sources */,
+				F8726221D8DC8F7C371EBEC052295FAC /* EstimationFactory.swift in Sources */,
+				7395BCC2D83815DE32A17F7993019856 /* EstimationStrategy.swift in Sources */,
+				B5378B78F70B62B0124EFF5873F0CF90 /* Estimator.swift in Sources */,
+				FE8FF517AE5027E4B8CA69D42FF07F75 /* FFTTransformer.swift in Sources */,
+				C8490E64A0D4FF8AC55E9FC90DB354C8 /* HPSEstimator.swift in Sources */,
+				4FE061CDF2D25CFA6260C3F687A92D04 /* InputSignalTracker.swift in Sources */,
+				7E8624DC5610FB770F183CC61F2BEF98 /* JainsEstimator.swift in Sources */,
+				1A9AA34F16281FABC0D56E35F467E06B /* LocationEstimator.swift in Sources */,
+				8022D5F9DC040D6281D168DF192E0152 /* MaxValueEstimator.swift in Sources */,
+				7736AEDEBDCCA09194799C4C6670FE3D /* OutputSignalTracker.swift in Sources */,
+				48BFACADD277CBAA1DB13C9E97D6A0C2 /* PitchEngine.swift in Sources */,
+				5685A858CB9F1729E5F92C668DD5D70F /* QuadradicEstimator.swift in Sources */,
+				651D2FC1E817A7E9372A32E86B7E1C78 /* QuinnsFirstEstimator.swift in Sources */,
+				9166B43B1B98B7238BE491A6601E6EEA /* QuinnsSecondEstimator.swift in Sources */,
+				C1D64B44F299C2C23841A565EE47C288 /* SignalTracker.swift in Sources */,
+				A318C257D2CE8A7CB4F2D1571015A919 /* SimpleTransformer.swift in Sources */,
+				BB10C216D6FBF974B16845252C079232 /* SimulatorSignalTracker.swift in Sources */,
+				5BFC9D4D2CF65605F89C763BA800C2FA /* Transformer.swift in Sources */,
+				4271DAA7A5DCB43B93EAB086A2373C5A /* YINEstimator.swift in Sources */,
+				89F1A83E76B64BA81060D9147C5B69E8 /* YINTransformer.swift in Sources */,
+				164949BE174563F9CBE616047E337B53 /* YINUtil.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6A5C80DDE316C298E913A09014151AC2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Pitchy;
+			target = 7DF057AD7A09E3239F8A743273F545B1 /* Pitchy */;
+			targetProxy = 82FC8822257CAFBC8CC7D0B411CD320E /* PBXContainerItemProxy */;
+		};
+		70842CEF35AEE7815C92E4B1C23A1019 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Beethoven;
+			target = CA6975F226AE2D5E0CE39C1BFC3B796F /* Beethoven */;
+			targetProxy = A5BB53379E851555F9F15DB7943FADBD /* PBXContainerItemProxy */;
+		};
+		E8F21BF3CF4369187ED90F9F3675E00A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Pitchy;
+			target = 7DF057AD7A09E3239F8A743273F545B1 /* Pitchy */;
+			targetProxy = 0BE96B227A5EECD07E3DAB5A64D37CAB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		25AD9454612BF454A1E3DC4CD4FA8C6D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		7145D554C3961C29AF5BBBCC307065CB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CE64C3209242F5A7A93117BA0EE4EB00 /* Beethoven.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Beethoven/Beethoven-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Beethoven/Beethoven-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Beethoven/Beethoven.modulemap";
+				PRODUCT_MODULE_NAME = Beethoven;
+				PRODUCT_NAME = Beethoven;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		7FF7118A493501D89259B7B4CA550043 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BADD8AA536F6560D7870E3B790D66930 /* Beethoven.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Beethoven/Beethoven-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Beethoven/Beethoven-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Beethoven/Beethoven.modulemap";
+				PRODUCT_MODULE_NAME = Beethoven;
+				PRODUCT_NAME = Beethoven;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		8D846A36CCB1EFED77E5C81DEF92D48A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E11ABBA1D1436F1412A356F4B3AD2FFF /* Pitchy.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Pitchy/Pitchy-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pitchy/Pitchy-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Pitchy/Pitchy.modulemap";
+				PRODUCT_MODULE_NAME = Pitchy;
+				PRODUCT_NAME = Pitchy;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		A27070DFAD6A9F98B5CDBFEE38D797B9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 375187A9131893C7A2C5DB90413D1558 /* Pods-AudioFeaturesCSS484.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-AudioFeaturesCSS484/Pods-AudioFeaturesCSS484-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-AudioFeaturesCSS484/Pods-AudioFeaturesCSS484.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		A97C9B2B6C9AEEB2D3D35C48D6CF4677 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FD5A7073859368507E633EDE087F1F94 /* Pitchy.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Pitchy/Pitchy-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pitchy/Pitchy-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Pitchy/Pitchy.modulemap";
+				PRODUCT_MODULE_NAME = Pitchy;
+				PRODUCT_NAME = Pitchy;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		C96F7C6AA3DA7FA65AC3B0E100DDE8F6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FBAD379A3BD11824B0C980373C3D75F9 /* Pods-AudioFeaturesCSS484.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-AudioFeaturesCSS484/Pods-AudioFeaturesCSS484-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-AudioFeaturesCSS484/Pods-AudioFeaturesCSS484.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		CA547D2C7E9A8A153DC2B27FBE00B112 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		007FFC3346D504C5849AA31F87623118 /* Build configuration list for PBXNativeTarget "Beethoven" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7145D554C3961C29AF5BBBCC307065CB /* Debug */,
+				7FF7118A493501D89259B7B4CA550043 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		19E362A2EDF3A402B0AF0813FDB99EE8 /* Build configuration list for PBXNativeTarget "Pitchy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8D846A36CCB1EFED77E5C81DEF92D48A /* Debug */,
+				A97C9B2B6C9AEEB2D3D35C48D6CF4677 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				25AD9454612BF454A1E3DC4CD4FA8C6D /* Debug */,
+				CA547D2C7E9A8A153DC2B27FBE00B112 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D486F11A23109EEFB6F9F8A5183AAC05 /* Build configuration list for PBXNativeTarget "Pods-AudioFeaturesCSS484" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A27070DFAD6A9F98B5CDBFEE38D797B9 /* Debug */,
+				C96F7C6AA3DA7FA65AC3B0E100DDE8F6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}
