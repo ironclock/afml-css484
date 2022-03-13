@@ -73,13 +73,9 @@ struct OutputView: View {
                             } else {
                                 Text("❌")
                             }
-                            //                            .frame(width: 75)
-                            //                    }
                         }
                     }
                 }
-                //                .padding(0)
-                //                .lineSpacing(0)
             }
         }
     }
@@ -96,7 +92,6 @@ struct OutputView: View {
         do {
             self.audioPlayer = try AVAudioPlayer(contentsOf: url)
             audioPlayer.play()
-            //            print(audioPlayer.settings)
         } catch {
             print("error playing audio file")
         }

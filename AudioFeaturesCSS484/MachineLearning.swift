@@ -25,6 +25,13 @@ class MachineLearning {
     let audioModel = FifthModel()
     var audioOutput = [Output]()
         
+    // Runs the features extracted from each audio file against our model
+    // to predict if a file is music or speech
+    //
+    // - Parameters:
+    //      - features: the features of all audio files
+    // - Returns:
+    //      - the output as an Output array containing predictions
     func runModel(features: [Features]) async -> [Output] {
         for feature in features {
             var groundTruth = "no"
@@ -36,8 +43,6 @@ class MachineLearning {
             guard let output = try? audioModel.prediction(energyDistribution: energyDistribution, zeroCrossing: zeroCrossingRate, averageEnergy: avgEnergy) else {
                 fatalError("could not run")
             }
-            
-            //            print(fileName + ": " + output.label)
             
             if(feature.fileName.contains("mu")) {
                 groundTruth = "yes"

@@ -46,8 +46,6 @@ struct Features {
         self.zeroCrossing = zeroCrossing
         self.averageEnergy = averageEnergy
     }
-    
-    
 }
 
 enum FeatureError: Error {
@@ -60,30 +58,16 @@ class FeatureExtraction {
     var audioFile: AVAudioFile!
     var features = [Features]()
     var buffers = [Buffer]()
-    
     let ml = MachineLearning()
     
-//    func getSampleRate(audioFile: String) -> Int {
-//        guard let audioData = Bundle.main.path(forResource: audioFile, ofType: nil) else {
-//            print("could not find audio file")
-//            return -1
-//        }
-//
-//        let url = URL(fileURLWithPath: audioData)
-//
-//        do {
-//            audioPlayer = try AVAudioPlayer(contentsOf: url)
-//            //            audioPlayer.play()
-//            guard let sampleRate = audioPlayer.settings["AVSampleRateKey"] as? Int else { return -1 }
-//            return sampleRate
-//        } catch {
-//            print("error playing audio file")
-//        }
-//        return -1
-//    }
-
+    
+    // Performs transformation/extraction functions on each audio file
+    //
+    // - Parameters:
+    //      - none
+    // - Returns:
+    //      - Returns an array of Features objects
     func transformAllFiles() async -> [Features] {
-        
         let fm = FileManager.default
         let path = Bundle.main.resourcePath! + "/audioFiles"
         
@@ -118,7 +102,12 @@ class FeatureExtraction {
             fatalError("could not transform files")
         }
     }
-    
+    // Transforms the audio file's amplitude into magnitude
+    //
+    // - Parameters:
+    //      - amplitude: Audio file's amplitude as AVAudioPCMBuffer type
+    // - Returns:
+    //      - The magnitude as an array of floats
     func getMagnitude(amplitude: AVAudioPCMBuffer) -> [Float] {
         let frameCount = amplitude.frameLength
         let log2n = UInt(round(log2(Double(frameCount))))
@@ -141,8 +130,7 @@ class FeatureExtraction {
         var window = [Float](repeating: 0, count: windowSize)
         
         vDSP_hann_window(&window, vDSP_Length(windowSize), Int32(vDSP_HANN_NORM))
-        vDSP_vmul((amplitude.floatChannelData?.pointee)!, 1, window,
-                  1, &transferBuffer, 1, vDSP_Length(windowSize))
+        vDSP_vmul((amplitude.floatChannelData?.pointee)!, 1, window, 1, &transferBuffer, 1, vDSP_Length(windowSize))
         
         let temp = transferBuffer.withUnsafeBufferPointer({ $0 }).baseAddress!
         temp.withMemoryRebound(to: DSPComplex.self, capacity: transferBuffer.count) { (typeConvertedTransferBuffer) -> Void in
@@ -157,12 +145,12 @@ class FeatureExtraction {
         
         /// Computes the squared magnitude value of each element in the supplied complex single-precision vector.
         vDSP_zvmags(&output, 1, &magnitudes, 1, vDSP_Length(inputCount))
-                
+        
         var normalizedMagnitudes = [Float](repeating: 0.0, count: inputCount)
         
         /// Multiplies a single-precision scalar value by a single-precision vector.
         vDSP_vsmul(sqrtq(magnitudes), 1, [2.0 / Float(inputCount)],&normalizedMagnitudes, 1, vDSP_Length(inputCount))
-                
+        
         vDSP_destroy_fftsetup(fftSetup)
         
         return normalizedMagnitudes
@@ -176,8 +164,13 @@ class FeatureExtraction {
         return results
     }
     
+    // Extracts amplitude from a single audio file
+    //
+    // - Parameters:
+    //      - file: The audio file name
+    // - Returns:
+    //      - The amplitude as AVAudioPCMBuffer type
     func getAmplitude(file: String) throws -> AVAudioPCMBuffer {
-                        
         guard let audioData = Bundle.main.path(forResource: "audioFiles/" + file, ofType: nil) else {
             print("could not find audio file")
             throw FeatureError.defaultError
@@ -204,10 +197,15 @@ class FeatureExtraction {
         } catch {
             throw FeatureError.defaultError
         }
-//
         return amplitude
     }
     
+    // Converts raw buffer (amplitude) to float array
+    //
+    // - Parameters:
+    //      - amplitude: amplitude as AVAudioPCMBuffer type
+    // - Returns:
+    //      - The amplitude as a float array
     func convertBuffer(amplitude: AVAudioPCMBuffer) -> [Float] {
         let arraySize = Int(amplitude.frameLength)
         let samples = Array(UnsafeBufferPointer(start: amplitude.floatChannelData![0], count:arraySize))
@@ -215,7 +213,6 @@ class FeatureExtraction {
     }
     
     func averageEnergy(amplitude: [Float]) -> Double {
-        
         var sum = 0.0
         
         for item in amplitude {
@@ -225,8 +222,13 @@ class FeatureExtraction {
         return (sum / Double(amplitude.count))
     }
     
+    // Extracts zero crossing rate feature from audio's amplitude
+    //
+    // - Parameters:
+    //      - amplitude: amplitude as a float array
+    // - Returns:
+    //      - The zero crossing rate feature as a double
     func zeroCrossingRate(amplitude: [Float]) -> Double {
-                
         var signs = [Bool](repeating: false, count: 2)
         var sum: Double = 0
         let count: Double = Double(amplitude.count - 1)
@@ -252,9 +254,15 @@ class FeatureExtraction {
         return sum / (2*(count))
         
     }
-    
-    func energyDistribution(magnitude: [Float], sampleRate: Float) -> Float {
         
+    // Extracts energy distribution/spectral centroid using audio's magnitude and sample rate
+    //
+    // - Parameters:
+    //      - magnitude: magnitude as a float array
+    //      - sampleRate: sample rate as a float array
+    // - Returns:
+    //      - The energy distribution as a float
+    func energyDistribution(magnitude: [Float], sampleRate: Float) -> Float {
         var numSum: Float = 0.0
         var denomSum: Float = 0.0
         
@@ -268,15 +276,27 @@ class FeatureExtraction {
         
         return numSum/denomSum
     }
-
+    
+    // Extracts the sample rate from an audio file using its magnitude
+    //
+    // - Parameters:
+    //      - magnitude: magnitude as a float array
+    //      - file: file name to get its duration
+    // - Returns:
+    //      - The sample rate as a float
     func getSampleRate(magnitude: [Float], file: String) -> Float {
         let n = Float(magnitude.count)
         let length = Float(duration(for: file))
         return (n/length)
     }
     
+    // Finds the duration of an audio file
+    //
+    // - Parameters:
+    //      - resource: the file name
+    // - Returns:
+    //      - The duration as a double
     func duration(for resource: String) -> Double {
-        
         guard let audioData = Bundle.main.path(forResource: "audioFiles/" + resource, ofType: nil) else {
             print("could not find audio file")
             return -1.0
